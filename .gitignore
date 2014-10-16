@@ -1,0 +1,14 @@
+# generated
+bin
+build
+
+# eclipse stuff
+.classpath
+.settings
+.project
+.gradle/
+out/
+.idea/
+
+#idea stuff
+*.iml

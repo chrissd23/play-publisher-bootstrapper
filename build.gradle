@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.apis:google-api-services-androidpublisher:v2-rev2-1.19.0'
+    compile 'commons-lang:commons-lang:2.6'
+    compile 'commons-io:commons-io:1.4'
+
+    testCompile 'junit:junit:4.11'
+}
+
+jar {
+    System.setProperty("file.encoding", "UTF-8")
+    compileJava.options.encoding = 'utf-8'
+
+    manifest {
+        attributes("Main-Class": "de.bootstrap.Main")
+    }
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
