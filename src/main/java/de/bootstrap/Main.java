@@ -8,6 +8,7 @@ public class Main {
     private static String mServiceAccountMail;
     private static String mFilePath;
     private static String mDestinationPath;
+    private static String mVersionCode;
 
 
     public static void main(String[] args) {
@@ -16,6 +17,9 @@ public class Main {
 
         System.out.print("Please enter your PackageName: ");
         mApplicationPackageName = scanInput.nextLine();
+
+        System.out.print("Please enter your App Version Code: ");
+        mVersionCode = scanInput.nextLine();
 
         System.out.print("Please enter your ServiceAccountMail: ");
         mServiceAccountMail = scanInput.nextLine();
@@ -26,7 +30,7 @@ public class Main {
         System.out.print("Please enter your destination Path: ");
         mDestinationPath = scanInput.nextLine();
 
-
         BootstrapTask.createListings(mApplicationPackageName, mServiceAccountMail, mFilePath, mDestinationPath);
+        BootstrapTask.createWhatsNew(mApplicationPackageName, mServiceAccountMail, mFilePath, mDestinationPath, mVersionCode);
     }
 }

@@ -22,11 +22,7 @@ public class AndroidPublisherHelper {
     private static final Log log = LogFactory.getLog(AndroidPublisherHelper.class);
 
 
-    private static final String APPLICATION_NAME = "com.electronic_android";
-
-    static final String MIME_TYPE_APK = "application/vnd.android.package-archive";
-
-    static final String MIME_TYPE_IMAGE = "image/*";
+    private static final String APPLICATION_NAME = "com.example.app";
 
     /**
      * Global instance of the JSON factory.
