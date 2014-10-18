@@ -47,9 +47,9 @@ public class BootstrapTask {
                     File listing = new File(languageFolder.getAbsolutePath() + "/listings");
                     listing.mkdir();
                     if (listing.exists()) {
-                        FileUtils.writeStringToFile(new File(listing.getAbsolutePath() + "/fulldescription.txt"), fullDescription);
-                        FileUtils.writeStringToFile(new File(listing.getAbsolutePath() + "/shortdescription.txt"), shortDescription);
-                        FileUtils.writeStringToFile(new File(listing.getAbsolutePath() + "/title.txt"), title);
+                        FileUtils.writeStringToFile(new File(listing.getAbsolutePath() + "/fulldescription"), fullDescription);
+                        FileUtils.writeStringToFile(new File(listing.getAbsolutePath() + "/shortdescription"), shortDescription);
+                        FileUtils.writeStringToFile(new File(listing.getAbsolutePath() + "/title"), title);
                     }
 
                 }
