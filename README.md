@@ -23,7 +23,7 @@ Download the sources and compile the project with gradle
 
 Run
 ```
-java -jar ./build/libs/play-publisher-bootstrapper.jar
+java -jar ./build/libs/play-publisher-bootstrap.jar
 ```
 
 The tool will ask you for the following information
@@ -33,4 +33,3 @@ The tool will ask you for the following information
 * **Service Account Mail**: see https://developers.google.com/android-publisher/getting_started
 * **Path to pk12 File**: see https://developers.google.com/android-publisher/getting_started
 * **Destination Path**: The destination you want to download the metadata to.
-
